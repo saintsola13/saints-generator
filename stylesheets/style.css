@@ -44,6 +44,11 @@ a.navbar-brand:hover {
   width: 30vw;
   height: 30vw;
 }
+.layers {
+  position: relative;
+  width: 30vw;
+  margin: 0 auto;
+}
 .clear {
   display: block;
   width: 30vw;
@@ -195,22 +200,28 @@ a.navbar-brand:hover {
     font-size: 18px;
   }
   .layer {
-    width: 95vw;
-    height: 95vw;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .layers {
+    width: 100%;
   }
   .clear {
     display: block;
-    height: 95vw;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
   }
   .trait_selectors {
-    width: 95vw;
+    width: 100%;
   }
   .trait_selector {
     font-size: 24px;
     text-align: left;
   }
   .layers #download_button {
-    width: 95vw;
+    width: 100%;
   }
 }
 
