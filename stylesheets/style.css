@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@font-face {
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 20px;
+  background-color: #000;
+  color: #FFF;
+}
+h1 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+  color: #f6885e;
+}
+a, a:hover {
+  color: #FFFFFF;
+  border-radius: 12px;
+}
+a:hover, .btn:hover {
+}
+a.navbar-brand:hover {
+  background: transparent;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 90%;
+  padding-left: 10px;
+}
+#mainNav {
+}
+.nav-logo {
+  width: 240px;
+}
+.layer {
+  display: block;
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+}
+.clear {
+  display: block;
+  width: 30vw;
+  height: 30vw;
+}
+#download_button {
+  display: block;
+  width: 30vw;
+}
+#token_id {
+  border-radius: 24px;
+}
+#load_asset {
+  width: 30%;
+  display: inline-block;
+  font-size: 14px;
+}
+.loader {
+  color: #E9336E;
+  background-color: #222;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.loader_ascii {
+  font-family: monospace;
+  letter-spacing: 0.4em;
+  font-size: 1em;
+  padding-top: 200px;
+  padding-left: 50px;
+}
+.trans {
+  color: transparent;
+}
+.layer_bg {
+}
+.select2-container .select2-selection--single {
+  padding: 10px;
+  height: auto;
+}
+.select2-results {
+  color: black;
+}
+.primary_button {
+  width: 100%;
+  background: #000;
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  padding: 20px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  border: 4px solid #f6885e;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.primary_button:hover {
+  background: #f6885e;
+  color: #000;
+}
+.trait_selectors {
+  color: #fff;
+}
+.trait_selector {
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+}
+.layer_select {
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px;
+}
+#banner_preview {
+  max-width: 600px;
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+#download_banner {
+  max-width: 300px;
+  width: 50%;
+  left: 50%;
+  margin: auto;
+}
+.banner_preview img {
+  position: absolute;
+  overflow: hidden;
+}
+.img1 {
+  margin-top: -100px;
+  height: 400px;
+  right: -200px;
+}
+.img2 {
+  right: 150px;
+  height: 200px;
+}
+.img3 {
+  right: 350px;
+  height: 100px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .main-cta {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #token_id {
+    width: 100%;
+  }
+  .header-img {
+    width: 60%;
+  }
+  .header-logo {
+    display: none;
+  }
+  #copy-to-clipboard {
+    font-size: 70%;
+  }
+  #howtobuy .step-2 {
+    margin-top: 0px;
+  }
+  #howtobuy .step-3 {
+    margin-top: 0px;
+  }
+  .meme-img img {
+    height: 50vh;
+    width: 80vw;
+    object-fit: cover;
+  }
+  .dgaf {
+    width: 220px;
+  }
+  .dexchart {
+    display: none;
+  }
+  .card-image {
+    width: 60%;
+    top: 64px;
+    position: static;
+  }
+  .primary_button {
+    font-size: 18px;
+  }
+  .layer {
+    width: 95vw;
+    height: 95vw;
+  }
+  .clear {
+    display: block;
+    height: 95vw;
+  }
+  .trait_selectors {
+    width: 95vw;
+  }
+  .trait_selector {
+    font-size: 24px;
+    text-align: left;
+  }
+  .layers #download_button {
+    width: 95vw;
+  }
+}
+
+/* loader */
+.spinner {
+  width: 8vmax;
+  height: 8vmax;
+  border-right: 4px solid #E9336E;
+  border-radius: 100%;
+  -webkit-animation: spinRight 800ms linear infinite;
+          animation: spinRight 800ms linear infinite;
+}
+.spinner:before, .spinner:after {
+  content: "";
+  width: 6vmax;
+  height: 6vmax;
+  display: block;
+  position: absolute;
+  top: calc(50% - 3vmax);
+  left: calc(50% - 3vmax);
+  border-right: 4px solid #E9336E;
+  border-radius: 100%;
+  -webkit-animation: spinLeft 800ms linear infinite;
+          animation: spinLeft 800ms linear infinite;
+}
+.spinner:after {
+  width: 4vmax;
+  height: 4vmax;
+  top: calc(50% - 2vmax);
+  left: calc(50% - 2vmax);
+  border: 0;
+  border-right: 4px solid #E9336E;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes spinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes spinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+@-webkit-keyframes spinRight {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
